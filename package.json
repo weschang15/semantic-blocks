@@ -1,0 +1,22 @@
+{
+  "name": "semantic-blocks",
+  "version": "0.0.1",
+  "description": "WordPress plugin for Advanced & Semantic Gutenberg blocks",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weschang15/semantic-blocks.git"
+  },
+  "author": "Wesley Chang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weschang15/semantic-blocks/issues"
+  },
+  "homepage": "https://github.com/weschang15/semantic-blocks#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "^3.3.0"
+  }
+}

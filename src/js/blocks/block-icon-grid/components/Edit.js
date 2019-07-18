@@ -9,11 +9,11 @@ import {
 import IconGrid from "./IconGrid";
 
 // Only allow certain types of blocks within this block
-const ALLOWED_BLOCKS = ["mindtouch-components/icon-grid-item"];
+const ALLOWED_BLOCKS = ["semantic-block-components/icon-grid-item"];
 
 // Get Column Inner blocks for number selected
 const getTemplate = memoize(items =>
-  times(items, () => ["mindtouch-components/icon-grid-item"])
+  times(items, () => ["semantic-block-components/icon-grid-item"])
 );
 
 const IconGridEdit = (props = {}) => {

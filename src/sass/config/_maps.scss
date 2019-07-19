@@ -1,0 +1,24 @@
+$breakpoints: (
+  "xxlarge": "(min-width: #{$breakpoint-xlarge-default + $onepx})",
+  "xlarge-only":
+    "(min-width: #{$breakpoint-large-default + $onepx}) and (max-width: #{$breakpoint-xlarge-default})",
+  "xlarge-up": "(min-width: #{$breakpoint-large-default + $onepx})",
+  "xlarge": "(max-width: #{$breakpoint-xlarge-default})",
+  "large-only":
+    "(min-width: #{$breakpoint-medium-default + $onepx}) and (max-width: #{$breakpoint-large-default})",
+  "large-up": "(min-width: #{$breakpoint-medium-default + $onepx})",
+  "large": "(max-width: #{$breakpoint-large-default})",
+  "medium-only":
+    "(min-width: #{$breakpoint-small-default + $onepx}) and (max-width: #{$breakpoint-medium-default})",
+  "medium-up": "(min-width: #{$breakpoint-small-default + $onepx})",
+  "medium": "(max-width: #{$breakpoint-medium-default})",
+  "small-only":
+    "(min-width: #{$breakpoint-xsmall-default + $onepx}) and (max-width: #{$breakpoint-small-default})",
+  "small-up": "(min-width: #{$breakpoint-xsmall-default + $onepx})",
+  "small": "(max-width: #{$breakpoint-small-default})",
+  "xsmall-only":
+    "(min-width: #{$breakpoint-xxsmall-default + $onepx}) and (max-width: #{$breakpoint-xsmall-default})",
+  "xsmall-up": "(min-width: #{$breakpoint-xxsmall-default + $onepx})",
+  "xsmall": "(max-width: #{$breakpoint-xsmall-default})",
+  "xxsmall": "(max-width: #{$breakpoint-xxsmall-default})"
+);

@@ -42,7 +42,25 @@ const Icons = ({ name }) => {
             fill="currentColor"
           />
         </SVG>
-      )
+      );
+    case "highlight":
+      return (
+        <SVG 
+          height="24" 
+          viewBox="0 0 24 24" 
+          width="24" 
+          xmlns="http://www.w3.org/2000/svg" 
+          xmlnsLlink="http://www.w3.org/1999/xlink"
+        >
+          <clipPath id="a">
+            <Path d="m0 0h24v24h-24z" />
+          </clipPath>
+          <Path 
+            clipPath="url(#a)" 
+            d="m6 14 3 3v5h6v-5l3-3v-5h-12zm5-12h2v3h-2zm-7.5 3.875 1.414-1.415 2.12 2.122-1.414 1.415zm13.46.71 2.123-2.12 1.414 1.414-2.122 2.121z"
+          />
+        </SVG>
+      );
     default:
       return;
   }

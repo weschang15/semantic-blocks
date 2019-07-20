@@ -14,7 +14,7 @@
 
 defined("ABSPATH") or die("Hey, you don't belong here!");
 
-require_once plugin_dir_path(__FILE__) . '/inc/class-semantic-blocks.php';
+require_once plugin_dir_path(__FILE__) . '/lib/class-semantic-blocks.php';
 
 if (!\function_exists('semantic_blocks_init')) {
   function semantic_blocks_init()

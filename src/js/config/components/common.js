@@ -1,1 +1,1 @@
-export const namespace = "semantic-block-components";
+export const namespace = "semantic-blocks";

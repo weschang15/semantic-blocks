@@ -4,7 +4,8 @@
   "description": "WordPress plugin for Advanced & Semantic Gutenberg blocks",
   "main": "",
   "scripts": {
-    "build": "wp-scripts build",
+    "build": "wp-scripts build && npm run build:package",
+    "build:package": "zip -vr semantic-blocks.zip index.php semantic-blocks.php README.md lib/ build/ -x \"*.DS_Store\"",
     "check-engines": "wp-scripts check-engines",
     "check-licenses": "wp-scripts check-licenses",
     "lint:css": "wp-scripts lint-style",

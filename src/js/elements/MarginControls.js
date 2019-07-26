@@ -9,6 +9,7 @@ function MarginControls(props = {}) {
     marginTopLabel,
     marginTopMin,
     marginTopMax,
+    marginTopStep,
     marginEnableTop,
     onChangeMarginTop = () => {},
     // Margin right props
@@ -16,6 +17,7 @@ function MarginControls(props = {}) {
     marginRightLabel,
     marginRightMin,
     marginRightMax,
+    marginRightStep,
     marginEnableRight,
     onChangeMarginRight = () => {},
     // Margin bottom props
@@ -23,6 +25,7 @@ function MarginControls(props = {}) {
     marginBottomLabel,
     marginBottomMin,
     marginBottomMax,
+    marginBottomStep,
     marginEnableBottom,
     onChangeMarginBottom = () => {},
     // Margin left props
@@ -30,6 +33,7 @@ function MarginControls(props = {}) {
     marginLeftLabel,
     marginLeftMin,
     marginLeftMax,
+    marginLeftStep,
     marginEnableLeft,
     onChangeMarginLeft = () => {},
     // Margin vertical props
@@ -37,6 +41,7 @@ function MarginControls(props = {}) {
     marginVerticalLabel,
     marginEnableVertical,
     marginVerticalMin,
+    marginVerticalStep,
     marginVerticalMax,
     onChangeMarginVertical = () => {},
     // Margin horizontal props
@@ -44,6 +49,7 @@ function MarginControls(props = {}) {
     marginHorizontalLabel,
     marginEnableHorizontal,
     marginHorizontalMin,
+    marginHorizontalStep,
     marginHorizontalMax,
     onChangeMarginHorizontal = () => {}
   } = props;
@@ -60,6 +66,7 @@ function MarginControls(props = {}) {
           value={marginTop}
           min={marginTopMin}
           max={marginTopMax}
+          step={marginTopStep}
           onChange={onChangeMarginTop}
         />
       )}
@@ -73,6 +80,7 @@ function MarginControls(props = {}) {
           value={marginRight}
           min={marginRightMin}
           max={marginRightMax}
+          step={marginRightStep}
           onChange={onChangeMarginRight}
         />
       )}
@@ -86,6 +94,7 @@ function MarginControls(props = {}) {
           value={marginBottom}
           min={marginBottomMin}
           max={marginBottomMax}
+          step={marginBottomStep}
           onChange={onChangeMarginBottom}
         />
       )}
@@ -99,6 +108,7 @@ function MarginControls(props = {}) {
           value={marginLeft}
           min={marginLeftMin}
           max={marginLeftMax}
+          step={marginLeftStep}
           onChange={onChangeMarginLeft}
         />
       )}
@@ -112,6 +122,7 @@ function MarginControls(props = {}) {
           value={marginVertical}
           min={marginVerticalMin}
           max={marginVerticalMax}
+          step={marginVerticalStep}
           onChange={onChangeMarginVertical}
         />
       )}
@@ -125,6 +136,7 @@ function MarginControls(props = {}) {
           value={marginHorizontal}
           min={marginHorizontalMin}
           max={marginHorizontalMax}
+          step={marginHorizontalStep}
           onChange={onChangeMarginHorizontal}
         />
       )}

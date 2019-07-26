@@ -5,7 +5,7 @@
   "main": "",
   "scripts": {
     "build": "wp-scripts build && npm run build:package",
-    "build:package": "zip -vr semantic-blocks.zip index.php semantic-blocks.php README.md lib/ build/ -x \"*.DS_Store\"",
+    "build:package": "zip -vr semantic-blocks.zip . -x /\\*.DS_Store -x *.git* -x node_modules/\\* -x src/\\*",
     "check-engines": "wp-scripts check-engines",
     "check-licenses": "wp-scripts check-licenses",
     "lint:css": "wp-scripts lint-style",

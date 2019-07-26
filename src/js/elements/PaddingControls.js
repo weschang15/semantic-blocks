@@ -10,42 +10,49 @@ function PaddingControls(props = {}) {
     paddingHelp,
     paddingMin,
     paddingMax,
+    paddingStep,
     paddingEnable,
     onChangePadding = () => {},
     // Padding top props
     paddingTop,
     paddingTopMin,
     paddingTopMax,
+    paddingTopStep,
     paddingEnableTop,
     onChangePaddingTop = () => {},
     // Padding right props
     paddingRight,
     paddingRightMin,
     paddingRightMax,
+    paddingRightStep,
     paddingEnableRight,
     onChangePaddingRight = () => {},
     // Padding bottom props
     paddingBottom,
     paddingBottomMin,
     paddingBottomMax,
+    paddingBottomStep,
     paddingEnableBottom,
     onChangePaddingBottom = () => {},
     // Padding left props
     paddingLeft,
     paddingLeftMin,
     paddingLeftMax,
+    paddingLeftStep,
     paddingEnableLeft,
     onChangePaddingLeft = () => {},
     // Padding vertical props
     paddingVertical,
     paddingEnableVertical,
     paddingVerticalMin,
+    paddingVerticalStep,
     paddingVerticalMax,
     onChangePaddingVertical = () => {},
     // Padding horizontal props
     paddingHorizontal,
     paddingEnableHorizontal,
     paddingHorizontalMin,
+    paddingHorizontalStep,
     paddingHorizontalMax,
     onChangePaddingHorizontal = () => {}
   } = props;
@@ -59,6 +66,7 @@ function PaddingControls(props = {}) {
           value={padding}
           min={paddingMin}
           max={paddingMax}
+          step={paddingStep}
           onChange={onChangePadding}
         />
       )}
@@ -68,6 +76,7 @@ function PaddingControls(props = {}) {
           value={paddingTop}
           min={paddingTopMin}
           max={paddingTopMax}
+          step={paddingTopStep}
           onChange={onChangePaddingTop}
         />
       )}
@@ -77,6 +86,7 @@ function PaddingControls(props = {}) {
           value={paddingRight}
           min={paddingRightMin}
           max={paddingRightMax}
+          step={paddingRightStep}
           onChange={onChangePaddingRight}
         />
       )}
@@ -86,6 +96,7 @@ function PaddingControls(props = {}) {
           value={paddingBottom}
           min={paddingBottomMin}
           max={paddingBottomMax}
+          step={paddingBottomStep}
           onChange={onChangePaddingBottom}
         />
       )}
@@ -95,6 +106,7 @@ function PaddingControls(props = {}) {
           value={paddingLeft}
           min={paddingLeftMin}
           max={paddingLeftMax}
+          step={paddingLeftStep}
           onChange={onChangePaddingLeft}
         />
       )}
@@ -104,6 +116,7 @@ function PaddingControls(props = {}) {
           value={paddingVertical}
           min={paddingVerticalMin}
           max={paddingVerticalMax}
+          step={paddingVerticalStep}
           onChange={onChangePaddingVertical}
         />
       )}
@@ -113,6 +126,7 @@ function PaddingControls(props = {}) {
           value={paddingHorizontal}
           min={paddingHorizontalMin}
           max={paddingHorizontalMax}
+          step={paddingHorizontalStep}
           onChange={onChangePaddingHorizontal}
         />
       )}

@@ -46,19 +46,19 @@ class Section extends Component {
       maxWidth:
         innerContainerMaxWidth > 0 ? innerContainerMaxWidth + "px" : null,
       paddingTop:
-        innerContainerPaddingTop > 0
+        innerContainerPaddingTop >= 0
           ? innerContainerPaddingTop + innerContainerPaddingUnit
           : null,
       paddingRight:
-        innerContainerPaddingRight > 0
+        innerContainerPaddingRight >= 0
           ? innerContainerPaddingRight + innerContainerPaddingUnit
           : null,
       paddingBottom:
-        innerContainerPaddingBottom > 0
+        innerContainerPaddingBottom >= 0
           ? innerContainerPaddingBottom + innerContainerPaddingUnit
           : null,
       paddingLeft:
-        innerContainerPaddingLeft > 0
+        innerContainerPaddingLeft >= 0
           ? innerContainerPaddingLeft + innerContainerPaddingUnit
           : null,
       color: textColor ? textColor : null,
@@ -72,14 +72,14 @@ class Section extends Component {
 
     return (
       <section
-        className={classnames(className, "mp-block-section", "section")}
+        className={classnames(className, "sb-block-section", "section")}
         style={sectionStyles}
       >
         {withOverlay && (
-          <div className="mp-block-section__overlay" style={overlayStyles} />
+          <div className="sb-block-section__overlay" style={overlayStyles} />
         )}
         <div
-          className={classnames("mp-block-section-inner", "container")}
+          className={classnames("sb-block-section-inner", "container")}
           style={innerContainerStyles}
         >
           {this.props.children}

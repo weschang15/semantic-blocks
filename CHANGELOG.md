@@ -8,7 +8,19 @@ and this project attempts to adhere to [Semantic Versioning](https://semver.org/
 ## [Unreleased]
 
 - Modal
+- Add support for syncing margins and paddings
+- Add support for modifying border properties on Details Dropdown
+
+## [0.0.2] - 2019-07-26
+
+### Added
+
 - Disclosure
+
+### Changed
+
+- Renamed dropdown component
+- Updated npm script name
 
 ## [0.0.1] - 2019-07-26
 
@@ -19,5 +31,6 @@ and this project attempts to adhere to [Semantic Versioning](https://semver.org/
 - Header
 - Hero
 
-[unreleased]: https://github.com/weschang15/semantic-blocks/compare/develop
-[0.0.1]: https://github.com/weschang15/semantic-blocks/tree/v0.0.1
+[unreleased]: https://github.com/weschang15/semantic-blocks/compare/v0.0.1...HEAD
+[0.0.2]: https://github.com/weschang15/semantic-blocks/compare/v0.0.1...v0.0.2
+[0.0.1]: https://github.com/weschang15/semantic-blocks/releases/tag/v0.0.1

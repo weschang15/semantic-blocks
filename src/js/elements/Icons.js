@@ -52,6 +52,13 @@ const Icons = ({ name }) => {
           />
         </SVG>
       );
+    case "dropdown":
+      return (
+        <SVG xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+          <Path d="M0 0h24v24H0z" fill="none" />
+          <Path d="M3 4l9 16 9-16H3zm3.38 2h11.25L12 16 6.38 6z" />
+        </SVG>
+      );
     default:
       return;
   }

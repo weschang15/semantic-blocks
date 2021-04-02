@@ -7,10 +7,6 @@ and this project attempts to adhere to [Semantic Versioning](https://semver.org/
 
 ## [Unreleased]
 
-- Modal
-- Add support for syncing margins and paddings
-- Add support for modifying border properties on Details Dropdown
-
 ## [0.0.2] - 2019-07-26
 
 ### Added

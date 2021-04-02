@@ -1,20 +1,10 @@
 {
   "name": "semantic-blocks",
-  "version": "0.0.1",
-  "description": "WordPress plugin for Advanced & Semantic Gutenberg blocks",
+  "version": "2.0.0",
+  "description": "WordPress plugin for advanced Gutenberg blocks, developed with accessibility and semantics in mind.",
   "main": "",
   "scripts": {
-    "build": "wp-scripts build && npm run build:plugin",
-    "build:plugin": "zip -vr semantic-blocks.zip . -x /\\*.DS_Store -x *.git* -x node_modules/\\* -x src/\\*",
-    "check-engines": "wp-scripts check-engines",
-    "check-licenses": "wp-scripts check-licenses",
-    "lint:css": "wp-scripts lint-style",
-    "lint:js": "wp-scripts lint-js",
-    "lint:pkg-json": "wp-scripts lint-pkg-json",
-    "start": "wp-scripts start",
-    "test:e2e": "wp-scripts test-e2e",
-    "test:unit": "wp-scripts test-unit-js",
-    "test:unit:watch": "wp-scripts test-unit-js --watch"
+    "build:plugin": "zip -vr semantic-blocks.zip . -x /\\*.DS_Store -x *.git* -x node_modules/\\* -x src/\\*"
   },
   "repository": {
     "type": "git",
@@ -30,22 +20,6 @@
     "last 2 versions"
   ],
   "devDependencies": {
-    "@wordpress/scripts": "^3.3.0",
-    "concurrently": "^4.1.1",
-    "css-loader": "^3.0.0",
-    "cssnano": "^4.1.10",
-    "cssnano-preset-advanced": "^4.0.7",
-    "mini-css-extract-plugin": "^0.8.0",
-    "node-sass": "^4.12.0",
-    "postcss-import": "^12.0.1",
-    "postcss-loader": "^3.0.0",
-    "postcss-preset-env": "^6.7.0",
-    "postcss-utilities": "^0.8.2",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1"
-  },
-  "dependencies": {
-    "classnames": "^2.2.6",
-    "memize": "^1.0.5"
+    "@prettier/plugin-php": "^0.16.2"
   }
 }

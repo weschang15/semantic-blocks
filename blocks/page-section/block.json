@@ -1,0 +1,15 @@
+{
+	"apiVersion": 2,
+	"name": "semantic-blocks/page-section",
+	"title": "Page Section",
+	"category": "semantic-blocks",
+	"icon": "editor-table",
+	"description": "Add a semantic Section element to wrap several blocks in a parent container.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "semantic-blocks",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

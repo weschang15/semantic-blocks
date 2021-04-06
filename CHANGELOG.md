@@ -7,6 +7,19 @@ and this project attempts to adhere to [Semantic Versioning](https://semver.org/
 
 ## [Unreleased]
 
+## [2.0.0] - 2021-04-06
+
+### Added
+
+- New Page Section block to semantically contain content
+- CSS Utility classes to modify margin, padding, and flex positioning of elements
+
+### Removed
+
+- Icon Grid block
+- Header block
+- Hero block
+
 ## [0.0.2] - 2019-07-26
 
 ### Added
@@ -28,5 +41,6 @@ and this project attempts to adhere to [Semantic Versioning](https://semver.org/
 - Hero
 
 [unreleased]: https://github.com/weschang15/semantic-blocks/compare/v0.0.1...HEAD
+[2.0.0]: https://github.com/weschang15/semantic-blocks/compare/v0.0.2...v2.0.0
 [0.0.2]: https://github.com/weschang15/semantic-blocks/compare/v0.0.1...v0.0.2
 [0.0.1]: https://github.com/weschang15/semantic-blocks/releases/tag/v0.0.1

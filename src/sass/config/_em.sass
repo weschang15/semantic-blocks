@@ -1,6 +1,0 @@
-@function em($px, $base-val: $base-px-default)
-  @if not unitless($px)
-    $px: strip-units($px)
-  @if not unitless($base-val)
-    $base-val: strip-units($base-val)
-  @return $px / $base-val * 1em

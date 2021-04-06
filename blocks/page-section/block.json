@@ -1,0 +1,60 @@
+{
+	"apiVersion": 2,
+	"name": "semantic-blocks/page-section",
+	"title": "Page Section",
+	"category": "semantic-blocks",
+	"icon": "editor-table",
+	"description": "A generic sectioning element to wrap content or other components. It should only be used when there isn't a more specific element to represent it.",
+	"supports": {
+		"html": false,
+		"align": ["wide"],
+		"anchor": true
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "wide"
+		},
+		"backgroundColor": {
+			"type": "string"
+		},
+		"customBackgroundColor": {
+			"type": "string"
+		},
+		"gradient": {
+			"type": "string"
+		},
+		"customGradient": {
+			"type": "string"
+		},
+		"contentMaxWidth": {
+			"type": "string",
+			"default": "1280px"
+		},
+		"contentPosition": {
+			"type": "string"
+		},
+		"padding": {
+			"type": "object",
+			"default": {
+				"left": "16px",
+				"top": "16px",
+				"right": "16px",
+				"bottom": "16px"
+			}
+		},
+		"margin": {
+			"type": "object",
+			"default": {
+				"left": "0px",
+				"top": "0px",
+				"right": "0px",
+				"bottom": "0px"
+			}
+		}
+	},
+	"textdomain": "semantic-blocks",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

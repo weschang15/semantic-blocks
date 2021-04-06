@@ -3,8 +3,12 @@
  *
  * @see https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
  */
-import { registerBlockType } from '@wordpress/blocks';
-
+import { registerBlockType } from "@wordpress/blocks";
+/**
+ * Internal dependencies
+ */
+import Edit from "./edit";
+import save from "./save";
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
  * All files containing `style` keyword are bundled together. The code used
@@ -12,20 +16,14 @@ import { registerBlockType } from '@wordpress/blocks';
  *
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
-import './style.scss';
-
-/**
- * Internal dependencies
- */
-import Edit from './edit';
-import save from './save';
+import "./style.scss";
 
 /**
  * Every block starts by registering a new block type definition.
  *
  * @see https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
  */
-registerBlockType( 'semantic-blocks/page-section', {
+registerBlockType("semantic-blocks/page-section", {
 	/**
 	 * @see https://make.wordpress.org/core/2020/11/18/block-api-version-2/
 	 */
@@ -40,4 +38,4 @@ registerBlockType( 'semantic-blocks/page-section', {
 	 * @see ./save.js
 	 */
 	save,
-} );
+});

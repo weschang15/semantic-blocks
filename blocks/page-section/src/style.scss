@@ -1,12 +1,121 @@
-/**
- * The following styles get applied both on the front of your site
- * and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
-
 .wp-block-semantic-blocks-page-section {
-	background-color: #21759b;
-	color: #fff;
-	padding: 2px;
+	&__inner {
+		max-width: var(--semantic-blocks-page-section-content-width);
+	}
+
+	&.has-custom-content-position {
+		.wp-block-semantic-blocks-page-section__inner {
+			flex-basis: var(--semantic-blocks-page-section-content-width);
+			margin: 0;
+			width: auto;
+		}
+	}
+}
+
+$align-items: (
+	"start": flex-start,
+	"end": flex-end,
+	"center": center,
+	"stretch": stretch,
+	"baseline": baseline,
+);
+
+$justify-contents: (
+	"start": flex-start,
+	"end": flex-end,
+	"center": center,
+	"between": space-between,
+	"around": space-around,
+	"evenly": space-evenly,
+);
+
+.has-semantic-blocks-utility.flex,
+section[class*="semantic-blocks"].flex {
+	display: flex;
+}
+
+@each $key in map-keys($align-items) {
+	.has-semantic-blocks-utility.items-#{$key},
+	section[class*="semantic-blocks"].items-#{$key} {
+		align-items: map-get($align-items, $key);
+	}
+}
+
+@each $key in map-keys($justify-contents) {
+	.has-semantic-blocks-utility.justify-#{$key},
+	section[class*="semantic-blocks"].justify-#{$key} {
+		justify-content: map-get($justify-contents, $key);
+	}
+}
+
+@for $i from -2 through 28 {
+	@if $i % 2 == 0 {
+		$size: abs($i + 2);
+		.has-semantic-blocks-utility.p-#{$size},
+		section[class*="semantic-blocks"].p-#{$size} {
+			padding: #{$size}px;
+		}
+		.has-semantic-blocks-utility.pt-#{$size},
+		section[class*="semantic-blocks"].pt-#{$size} {
+			padding-top: #{$size}px;
+		}
+		.has-semantic-blocks-utility.pr-#{$size},
+		section[class*="semantic-blocks"].pr-#{$size} {
+			padding-right: #{$size}px;
+		}
+		.has-semantic-blocks-utility.pb-#{$size},
+		section[class*="semantic-blocks"].pb-#{$size} {
+			padding-bottom: #{$size}px;
+		}
+		.has-semantic-blocks-utility.pl-#{$size},
+		section[class*="semantic-blocks"].pl-#{$size} {
+			padding-left: #{$size}px;
+		}
+		.has-semantic-blocks-utility.m-#{$size},
+		section[class*="semantic-blocks"].m-#{$size} {
+			margin: #{$size}px;
+		}
+		.has-semantic-blocks-utility.mt-#{$size},
+		section[class*="semantic-blocks"].mt-#{$size} {
+			margin-top: #{$size}px;
+		}
+		.has-semantic-blocks-utility.mr-#{$size},
+		section[class*="semantic-blocks"].mr-#{$size} {
+			margin-right: #{$size}px;
+		}
+		.has-semantic-blocks-utility.mb-#{$size},
+		section[class*="semantic-blocks"].mb-#{$size} {
+			margin-bottom: #{$size}px;
+		}
+		.has-semantic-blocks-utility.ml-#{$size},
+		section[class*="semantic-blocks"].ml-#{$size} {
+			margin-left: #{$size}px;
+		}
+	}
+}
+
+@for $i from -32 through -4 {
+	@if $i % 2 == 0 {
+		$size: abs($i + 2);
+		.has-semantic-blocks-utility.-m-#{$size},
+		section[class*="semantic-blocks"].-m-#{$size} {
+			margin: -#{$size}px;
+		}
+		.has-semantic-blocks-utility.-mt-#{$size},
+		section[class*="semantic-blocks"].-mt-#{$size} {
+			margin-top: -#{$size}px;
+		}
+		.has-semantic-blocks-utility.-mr-#{$size},
+		section[class*="semantic-blocks"].-mr-#{$size} {
+			margin-right: -#{$size}px;
+		}
+		.has-semantic-blocks-utility.-mb-#{$size},
+		section[class*="semantic-blocks"].-mb-#{$size} {
+			margin-bottom: -#{$size}px;
+		}
+		.has-semantic-blocks-utility.-ml-#{$size},
+		section[class*="semantic-blocks"].-ml-#{$size} {
+			margin-left: -#{$size}px;
+		}
+	}
 }

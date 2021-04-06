@@ -4,9 +4,54 @@
 	"title": "Page Section",
 	"category": "semantic-blocks",
 	"icon": "editor-table",
-	"description": "Add a semantic Section element to wrap several blocks in a parent container.",
+	"description": "A generic sectioning element to wrap content or other components. It should only be used when there isn't a more specific element to represent it.",
 	"supports": {
-		"html": false
+		"html": false,
+		"align": ["wide"],
+		"anchor": true
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "wide"
+		},
+		"backgroundColor": {
+			"type": "string"
+		},
+		"customBackgroundColor": {
+			"type": "string"
+		},
+		"gradient": {
+			"type": "string"
+		},
+		"customGradient": {
+			"type": "string"
+		},
+		"contentMaxWidth": {
+			"type": "string",
+			"default": "1280px"
+		},
+		"contentPosition": {
+			"type": "string"
+		},
+		"padding": {
+			"type": "object",
+			"default": {
+				"left": "16px",
+				"top": "16px",
+				"right": "16px",
+				"bottom": "16px"
+			}
+		},
+		"margin": {
+			"type": "object",
+			"default": {
+				"left": "0px",
+				"top": "0px",
+				"right": "0px",
+				"bottom": "0px"
+			}
+		}
 	},
 	"textdomain": "semantic-blocks",
 	"editorScript": "file:./build/index.js",

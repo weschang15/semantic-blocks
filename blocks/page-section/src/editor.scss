@@ -5,5 +5,20 @@
  */
 
 .wp-block-semantic-blocks-page-section {
-	border: 1px dotted #f00;
+	border: 2px solid #eee;
+
+	.block-editor-block-list__layout {
+		width: 100%;
+		.wp-block {
+			max-width: none;
+		}
+	}
+
+	// The .wp-block-semantic-blocks-page-section class is used just to increase selector specificity.
+	.wp-block-semantic-blocks-page-section__inner-container {
+		// Avoid text align inherit from cover image align.
+		text-align: left;
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
